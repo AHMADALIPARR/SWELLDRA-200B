@@ -1,3 +1,7 @@
+[![License: SNAPKITTY OPAQUE SOURCE LICENSE v1.0](https://img.shields.io/badge/License-SNAPKITTY%20OPAQUE%20SOURCE%20LICENSE%20v1.0-blue.svg)](LICENSE)
+[![Made with Python](https://img.shields.io/badge/Made%20with-Python-blue.svg)](requirements.txt)
+[![Architecture: 128-Expert MoE](https://img.shields.io/badge/Architecture-128--Expert%20MoE-green.svg)](swelldra/modeling/)
+
 # SWELLDRA — Operation SWELLING: 1M → 200B MoE
 
 **Objective:** Evolve SWELLDRA from 1M to 200B total parameters with sparse MoE activation.
