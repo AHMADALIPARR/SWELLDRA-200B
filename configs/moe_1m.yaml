@@ -1,0 +1,13 @@
+model:
+  name: swelldra-1m
+  d_model: 256
+  n_layers: 6
+  n_heads: 8
+  n_kv_heads: 4
+  vocab_size: 32000
+  max_seq_len: 2048
+  moe:
+    num_experts: 4
+    num_experts_per_token: 1
+    expert_capacity_factor: 1.25
+    aux_loss_weight: 0.01

@@ -1,0 +1,32 @@
+model:
+  name: swelldra-200b
+  d_model: 8192
+  n_layers: 64
+  n_heads: 64
+  n_kv_heads: 8
+  vocab_size: 128000
+  max_seq_len: 16384
+  rope_theta: 500000
+  norm_eps: 1e-5
+  moe:
+    num_experts: 128
+    num_experts_per_token: 2
+    expert_capacity_factor: 1.25
+    aux_loss_weight: 0.01
+    expert_types:
+      language: 40
+      ocr: 32
+      sql: 32
+      graph: 16
+      logic: 8
+  shared_backbone_params: 8200000000
+  total_params: 200200000000
+  active_params_per_token: 11200000000
+training:
+  batch_size: 2048
+  lr: 8e-5
+  precision: bf16
+  fsdp: true
+infrastructure:
+  min_gpus: 32
+  gpu_type: H100 80GB
